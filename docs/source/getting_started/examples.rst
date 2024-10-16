@@ -12,7 +12,7 @@ OpenAI models
 
    import os
    from dotenv import load_dotenv
-   from scrapegraphai.graphs import SmartScraperGraph
+   from scrapegraphai.graphs import OmniScraperGraph
    from scrapegraphai.utils import prettify_exec_info
 
    load_dotenv()
@@ -30,7 +30,7 @@ OpenAI models
    # Create the SmartScraperGraph instance and run it
    # ************************************************
 
-   smart_scraper_graph = SmartScraperGraph(
+   smart_scraper_graph = OmniScraperGraph(
       prompt="List me all the projects with their description.",
       # also accepts a string with the already downloaded HTML code
       source="https://perinim.github.io/projects/",
@@ -57,7 +57,7 @@ After that, you can run the following code, using only your machine resources br
 
 .. code-block:: python
 
-   from scrapegraphai.graphs import SmartScraperGraph
+   from scrapegraphai.graphs import OmniScraperGraph
    from scrapegraphai.utils import prettify_exec_info
 
    graph_config = {
@@ -79,7 +79,7 @@ After that, you can run the following code, using only your machine resources br
    # Create the SmartScraperGraph instance and run it
    # ************************************************
 
-   smart_scraper_graph = SmartScraperGraph(
+   smart_scraper_graph = OmniScraperGraph(
       prompt="List me all the projects with their description.",
       # also accepts a string with the already downloaded HTML code
       source="https://perinim.github.io/projects",
